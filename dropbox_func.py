@@ -29,7 +29,7 @@ def dropboxcheck():
     dayseconds = 60 * 60 * 24
 
     sys.path.append(str(__projectdir__ / Path('submodules/truefalse-interval/')))
-    from truefalse-interval_func import truefalsedo
+    from truefalse_interval_func import truefalsedo
     truefalsedo(synced, dropboxerrormessage, [1 * hourseconds, 6 * hourseconds, 12 * hourseconds, 1 * dayseconds, 2 * dayseconds, 3 * dayseconds, 4 * dayseconds, 5 * dayseconds, 6 * dayseconds], '/tmp/linux-dropboxinfo/')
 
 
